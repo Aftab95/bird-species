@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;               /* links will come in stright line*/
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;  /*in unorder list that round dot will disappier*/
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;  /* underline will go in ancre tag*/
+}
+
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* this is about navigation bar in  the top*/
+
+
+/*next is  Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    position: absolute;
+}
+
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+</style>
+
+
+
+
+  
+</head>
+
+<body>
+    
+
+    <section id="services-container">
+        
+        <div id="services">
+            <div class="box">
+                <img src="ig.jpg" alt="">
+                <h2 class="h-secondary center">Ivory Gull</h2>
+                <p class="center">The ivory gull (Pagophila eburnea) is a small gull, the only species in the genus Pagophila. It breeds in the high Arctic and has a circumpolar distribution through Greenland, northernmost North America, and Eurasia. <br><br></p>
+
+                <!--<p class="center">FOR MORE INFORMATION <form onsubmit=""action="ib.html"><Button class="btn">CLICK THE BUTTON </Button></form>-->
+                <h2 class="h-secondary center"> Description </h2>
+
+               <p class="center">This species is easy to identify. At 43 centimetres (17 in), it has a different, more pigeon-like shape than the Larus gulls, but the adult has completely white plumage, lacking the grey back of other gulls. The thick bill is blue with a yellow tip, and the legs are black. The bill is tipped with red, and the eyes have a fleshy, bright red eye-ring in the breeding season. Its flight call cry is a harsh, tern-like keeeer. It has many other vocalizations, including a warbling "fox-call" that indicates potential predators such as an Arctic fox, polar bear, Glaucous Gull or human near a nest, a "long-call" given with wrists out, elongated neck and downward-pointed bill, given in elaborate display to other Ivories during breeding, and a plaintitive begging call. given in courtship by females to males, accompanied by head-tossing. Young birds have a dusky face and variable amounts of black flecking in the wings and tail. The juveniles take two years to attain full adult plumage. There are no differences in appearance across the species’ geographic range.[2].</p>
+
+                <h2 class="h-secondary center">Distribution and habitat</h2>
+
+
+                <p class="center">Ivory gulls migrate only short distances south in autumn, most of the population wintering in northern latitudes at the edge of the pack ice, although some birds reach more temperate areas.<br> <bold>Diet</bold> -
+                It takes fish and crustaceans, rodents, eggs and small chicks but is also an opportunist scavenger, often found on seal or porpoise corpses. It has been known to follow polar bears and other predators to feed on the remains of their kills.
+                <br><bold>Reproduction </bold>- 
+                The ivory gull breeds on Arctic coasts and cliffs, laying one to three olive eggs in a ground nest lined with moss, lichens, or seaweed. ]</p>
+
+                <h2 class="h-secondary center">Diet</h2>
+                <p class="center">In 2012 the total population of ivory gulls was estimated to be between 19,000 and 27,000 individuals.[1] The majority of these were in Russia with 2,500–10,000 along the Arctic coastline, 4,000 on the Severnaya Zemlya archipelago[7] and 8,000 on Franz Josef Land and Victoria Island. There were also estimated to be around 4,000 individuals in Greenland[8] and in the years 2002–03, 500–700 were recorded in Canada.[1] Examination of data collected on an icebreaker plying between Greenland and Svalbard between 1988 and 2014, by Claude Joiris of the Royal Belgian Institute of Natural Sciences, found a sevenfold fall in ivory gull numbers after 2007.[9] The species is rapidly declining in Canada, while in other parts of its range its population is poorly known. The Canadian population in the early 2000s were approximately 80% lower than in the 1980s.[9]
+
+Illegal hunting may be one of the causes of the decline in the Canadian population, and a second cause may be the decline in sea ice. Ivory gulls breed near to sea ice and the loss may make it difficult to feed their chicks.[9][10]
+
+The species is classified by the International Union for Conservation of Nature as "Near Threatened".[1] </p>
+
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
+
+
+
